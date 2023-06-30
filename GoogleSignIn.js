@@ -30,7 +30,7 @@ async function createAccount(email) {
 
     const connectionConfig = {
         networkId: "testnet",
-        keyStore: myKeyStore, // first create a key store 
+        keyStore: myKeyStore, // first create a key store
         nodeUrl: "https://rpc.testnet.near.org",
         walletUrl: "https://wallet.testnet.near.org",
         helperUrl: "https://helper.testnet.near.org",
@@ -61,6 +61,8 @@ async function createAccount(email) {
     return jsonString;
 }
 
+// create a function to check if a NEAR account already exists and return a boolean value
+// for Mercy 
 async function checkAccount() {
     
 }
