@@ -63,8 +63,21 @@ async function createAccount(email) {
 
 // create a function to check if a NEAR account already exists and return a boolean value
 // for Mercy 
-async function checkAccount() {
-    
+async function checkAccount(accountId) {
+  const connectionConfig = {
+    networkId: "testnet",
+    nodeUrl: "https://rpc.testnet.near.org",
+  };
+
+  const nearConnection = await connect(connectionConfig);
+  try {
+    await nearConnection.viewAccount(accountId);
+    // Account exists
+    return true;
+  } catch (error) {
+    // Account doesn't exist
+    return false;
+  }
 }
 
 async function verify(token) {
