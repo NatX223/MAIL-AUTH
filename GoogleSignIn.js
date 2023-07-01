@@ -123,7 +123,6 @@ app.get('/callBack', async (req, res) => {
       const accountId = await convertEmailToTestnet(email);
       const accountDetails = await createAccount(accountId);
 
-
       res.send(`Authenticated Successfully with token ${email}`);
       console.log(accountDetails);
     } catch (err) {
