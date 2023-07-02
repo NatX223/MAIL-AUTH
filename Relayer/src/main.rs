@@ -211,13 +211,12 @@ async fn test_relay_transfer() {
 async fn test_function_call_relay() {
     // tests assume testnet in config
     // Test Transfer Action
-    let actions = vec![Action::FunctionCall(FunctionCallAction { gas: 100000, deposit: 1,     method_name: "set_greeting".to_string(),
+    let actions = vec![Action::FunctionCall(FunctionCallAction { gas: 100000, deposit: 1, method_name: "set_greeting".to_string(),
     args: b"{\"hey I'm here\"}".to_vec() })];
     let sender_id: AccountId = "relayer_test0.testnet".parse().unwrap();
     let receiver_id: AccountId = "dev-1686846163252-44429864602042".parse().unwrap();
     let nonce = 1;
     let max_block_height = 2000000000;
-
     // Call the `relay` function happy path
     let signed_delegate_action =
         create_signed_delegate_action(sender_id, receiver_id, actions, nonce, max_block_height);
