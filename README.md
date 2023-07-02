@@ -27,9 +27,7 @@ By providing a secure, efficient, and user-friendly authentication and account c
 ## Deployed App
 
 
-Public URL:
-
-
+Public URL: [MAIL-AUTH](https://boisterous-alfajores-5fbe88.netlify.app/)
 
 
 
