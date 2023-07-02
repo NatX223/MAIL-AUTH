@@ -128,6 +128,6 @@ Project was built and tested against:
 
 ## Team:
 
-Built for the [Web3 BUILD Hackathon Hosted in Partnership With NEAR Horizon](https://web3-build-hackathon.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=portfolio) by: [Sinachi](https://twitter.com/NatRonin) and [Mercy Boma Nap-Nkari](https://twitter.com/naps_thelma) 
+Built for the [Web3 BUILD Hackathon Hosted in Partnership With NEAR Horizon](https://web3-build-hackathon.devpost.com/) by: [Sinachi](https://twitter.com/NatRonin) and [Mercy Boma Nap-Nkari](https://twitter.com/naps_thelma) 
 
 
