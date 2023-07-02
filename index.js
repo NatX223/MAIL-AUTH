@@ -106,7 +106,7 @@ async function createAccount(accountID) {
 // 
 async function functionCall(data) {
     try {
-        const response = await axios.post('http://127.0.0.1:3030/relay', data);
+        const response = await axios.post('http://localhost:3030/relay', data);
         console.log('Status:', response.status);
         console.log('Data:', response.data);
     } catch (error) {
